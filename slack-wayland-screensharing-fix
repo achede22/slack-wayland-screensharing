@@ -1,0 +1,12 @@
+Slack Share creen in Wayland
+Just follow the steps
+
+dconf read /org/gnome/shell/favorite-apps
+
+sudo updatedb; locate slack.desktop
+# /usr/share/applications/slack.desktop
+
+sudo vim /usr/share/applications/slack.desktop
+
+# add 
+Exec=/usr/bin/slack --enable-features=WebRTCPipeWireCapturer %U
